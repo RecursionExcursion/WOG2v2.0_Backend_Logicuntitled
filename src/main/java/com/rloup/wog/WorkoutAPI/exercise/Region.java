@@ -1,4 +1,4 @@
-package com.rloup.wog.exercise;
+package com.rloup.wog.WorkoutAPI.exercise;
 
 public enum Region {
     BACK,

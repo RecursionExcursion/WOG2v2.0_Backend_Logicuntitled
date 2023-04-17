@@ -1,4 +1,4 @@
-package com.rloup.wog.util;
+package com.rloup.wog.WorkoutAPI.util;
 
 import org.codehaus.jackson.map.ObjectMapper;
 

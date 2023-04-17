@@ -1,13 +1,13 @@
-package com.rloup.wog;
+package com.rloup.wog.WorkoutAPI;
 
-import com.rloup.wog.exercise.Equipment;
-import com.rloup.wog.exercise.Exercise;
-import com.rloup.wog.exercise.Region;
+import com.rloup.wog.WorkoutAPI.exercise.Equipment;
+import com.rloup.wog.WorkoutAPI.exercise.Exercise;
+import com.rloup.wog.WorkoutAPI.exercise.Region;
 
 import java.util.List;
 
-public class ExerciseInit {
-    public static List<Exercise> init() {
+class ExerciseInit {
+    static List<Exercise> init() {
         return List.of(
 
                 //Body Weight

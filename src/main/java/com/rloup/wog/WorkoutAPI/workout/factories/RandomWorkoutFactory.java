@@ -1,9 +1,10 @@
-package com.rloup.wog.workout.factories;
+package com.rloup.wog.WorkoutAPI.workout.factories;
 
-import com.rloup.wog.MockExercises;
-import com.rloup.wog.exercise.Exercise;
-import com.rloup.wog.workout.Workout;
+import com.rloup.wog.WorkoutAPI.LocalExerciseManager;
+import com.rloup.wog.WorkoutAPI.exercise.Exercise;
+import com.rloup.wog.WorkoutAPI.workout.Workout;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class RandomWorkoutFactory implements AbstractWorkoutFactory {
@@ -11,7 +12,7 @@ public class RandomWorkoutFactory implements AbstractWorkoutFactory {
     private final int numberOfExercises;
     private final boolean repeatExercise;
 
-    List<Exercise> validExercises = MockExercises.MOCKEXERCISES;
+    private final List<Exercise> validExercises = Arrays.stream(LocalExerciseManager.INSTANCE.getExercises()).toList();
 
     private RandomWorkoutFactory(WorkoutFactoryOrder order) {
         numberOfExercises = order.numberOfExercises();

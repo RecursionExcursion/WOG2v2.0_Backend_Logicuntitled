@@ -1,12 +1,13 @@
-package com.rloup.wog.workout.factories;
+package com.rloup.wog.WorkoutAPI.workout.factories;
 
-import com.rloup.wog.MockExercises;
-import com.rloup.wog.exercise.Equipment;
-import com.rloup.wog.exercise.Exercise;
-import com.rloup.wog.exercise.Region;
-import com.rloup.wog.workout.Workout;
+import com.rloup.wog.WorkoutAPI.LocalExerciseManager;
+import com.rloup.wog.WorkoutAPI.exercise.Exercise;
+import com.rloup.wog.WorkoutAPI.exercise.Region;
+import com.rloup.wog.WorkoutAPI.exercise.Equipment;
+import com.rloup.wog.WorkoutAPI.workout.Workout;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -17,7 +18,6 @@ public class ParameterizedWorkoutWorkoutFactory implements AbstractWorkoutFactor
     private final List<Region> regions;
     private final List<Equipment> equipment;
     private final boolean repeatExercise;
-
 
     private ParameterizedWorkoutWorkoutFactory(WorkoutFactoryOrder order) {
         regions = order.regions();
@@ -48,11 +48,11 @@ public class ParameterizedWorkoutWorkoutFactory implements AbstractWorkoutFactor
             return false;
         };
 
-        List<Exercise> validExercises = MockExercises.MOCKEXERCISES.stream()
-                                                                   .filter(containsRegion)
-                                                                   .filter(requiresEquipment)
-                                                                   .collect(Collectors.toCollection(ArrayList::new));
+        List<Exercise> validExercises = Arrays.stream(LocalExerciseManager.INSTANCE.getExercises())
+                                              .filter(containsRegion)
+                                              .filter(requiresEquipment)
+                                              .collect(Collectors.toCollection(ArrayList::new));
 
-        return AbstractWorkoutFactory.buildWorkout(validExercises, numberOfExercises, repeatExercise);
+        return buildWorkout(validExercises, numberOfExercises, repeatExercise);
     }
 }

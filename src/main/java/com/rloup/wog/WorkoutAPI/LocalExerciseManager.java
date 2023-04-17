@@ -1,14 +1,16 @@
-package com.rloup.wog;
+package com.rloup.wog.WorkoutAPI;
 
-import com.rloup.wog.exercise.Exercise;
-import com.rloup.wog.util.JsonSerializer;
+import com.rloup.wog.WorkoutAPI.exercise.Exercise;
+import com.rloup.wog.WorkoutAPI.util.JsonSerializer;
 
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class LocalExerciseManager {
+public enum LocalExerciseManager {
+
+    INSTANCE;
 
     private final File file = new File(getRelativePath() + "/src/main/resources/standard_ex/exercises.json");
 

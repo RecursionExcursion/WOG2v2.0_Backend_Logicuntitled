@@ -1,7 +1,7 @@
-package com.rloup.wog.workout.factories;
+package com.rloup.wog.WorkoutAPI.workout.factories;
 
-import com.rloup.wog.exercise.Equipment;
-import com.rloup.wog.exercise.Region;
+import com.rloup.wog.WorkoutAPI.exercise.Equipment;
+import com.rloup.wog.WorkoutAPI.exercise.Region;
 
 import java.util.List;
 

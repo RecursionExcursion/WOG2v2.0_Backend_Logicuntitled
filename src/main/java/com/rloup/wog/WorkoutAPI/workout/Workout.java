@@ -1,6 +1,6 @@
-package com.rloup.wog.workout;
+package com.rloup.wog.WorkoutAPI.workout;
 
-import com.rloup.wog.exercise.Exercise;
+import com.rloup.wog.WorkoutAPI.exercise.Exercise;
 
 import java.util.ArrayList;
 import java.util.Arrays;
