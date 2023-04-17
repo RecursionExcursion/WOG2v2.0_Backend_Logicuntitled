@@ -12,7 +12,7 @@ public class MockExercises {
             new Exercise("Push Up",
                          "",
                          new Equipment[]{Equipment.BODY_WEIGHT},
-                         new Region[]{Region.CHEST, Region.Core}),
+                         new Region[]{Region.CHEST, Region.CORE}),
             new Exercise("Squat",
                          "",
                          new Equipment[]{Equipment.BODY_WEIGHT},

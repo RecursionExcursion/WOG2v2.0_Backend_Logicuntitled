@@ -1,9 +1,10 @@
-package com.rloup.wog.workout;
+package com.rloup.wog.workout.factories;
 
 import com.rloup.wog.MockExercises;
 import com.rloup.wog.exercise.Equipment;
 import com.rloup.wog.exercise.Exercise;
 import com.rloup.wog.exercise.Region;
+import com.rloup.wog.workout.Workout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,6 +53,6 @@ public class ParameterizedWorkoutWorkoutFactory implements AbstractWorkoutFactor
                                                                    .filter(requiresEquipment)
                                                                    .collect(Collectors.toCollection(ArrayList::new));
 
-        return AbstractWorkoutFactory.buildWorkout(validExercises,numberOfExercises,repeatExercise);
+        return AbstractWorkoutFactory.buildWorkout(validExercises, numberOfExercises, repeatExercise);
     }
 }

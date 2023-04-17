@@ -11,6 +11,9 @@ public class Exercise {
     private List<Region> muscleRegions = new ArrayList<>();
     private List<Equipment> equipmentNeeded = new ArrayList<>();
 
+    public Exercise() {
+    }
+
     public Exercise(String name, String description, Equipment[] equipment, Region[] regions) {
         this.name = name;
         this.description = description;
@@ -33,4 +36,21 @@ public class Exercise {
     public List<Equipment> getEquipmentNeeded() {
         return equipmentNeeded;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setMuscleRegions(List<Region> muscleRegions) {
+        this.muscleRegions = muscleRegions;
+    }
+
+    public void setEquipmentNeeded(List<Equipment> equipmentNeeded) {
+        this.equipmentNeeded = equipmentNeeded;
+    }
+
 }

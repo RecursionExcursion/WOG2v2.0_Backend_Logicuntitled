@@ -1,4 +1,4 @@
-package com.rloup.wog.workout;
+package com.rloup.wog.workout.factories;
 
 import com.rloup.wog.exercise.Equipment;
 import com.rloup.wog.exercise.Region;

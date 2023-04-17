@@ -4,6 +4,6 @@ public enum Region {
     BACK,
     CHEST,
     LEGS,
-    Core,
-    Cardio
+    CORE,
+    CARDIO
 }

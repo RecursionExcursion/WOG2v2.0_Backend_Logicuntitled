@@ -1,6 +1,7 @@
-package com.rloup.wog.workout;
+package com.rloup.wog.workout.factories;
 
 import com.rloup.wog.exercise.Exercise;
+import com.rloup.wog.workout.Workout;
 
 import java.util.List;
 import java.util.Random;
