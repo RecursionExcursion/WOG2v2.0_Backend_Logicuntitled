@@ -4,7 +4,6 @@ import com.rloup.wog.WorkoutAPI.exercise.Exercise;
 import com.rloup.wog.WorkoutAPI.util.JsonSerializer;
 
 import java.io.File;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
@@ -37,7 +36,6 @@ public enum LocalExerciseManager {
     }
 
     private String getRelativePath(){
-        Path currentRelativePath = Paths.get("");
-        return currentRelativePath.toAbsolutePath().toString();
+        return Paths.get("").toAbsolutePath().toString();
     }
 }
