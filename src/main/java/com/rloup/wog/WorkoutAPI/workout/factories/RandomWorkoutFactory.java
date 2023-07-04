@@ -7,7 +7,7 @@ import com.rloup.wog.WorkoutAPI.workout.Workout;
 import java.util.Arrays;
 import java.util.List;
 
-public class RandomWorkoutFactory implements AbstractWorkoutFactory {
+public class RandomWorkoutFactory extends AbstractWorkoutFactory {
 
     private final int numberOfExercises;
     private final boolean repeatExercise;
@@ -25,6 +25,6 @@ public class RandomWorkoutFactory implements AbstractWorkoutFactory {
 
     @Override
     public Workout create() {
-        return AbstractWorkoutFactory.buildWorkout(validExercises, numberOfExercises, repeatExercise);
+        return buildWorkout(validExercises, numberOfExercises, repeatExercise);
     }
 }

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class ParameterizedWorkoutWorkoutFactory implements AbstractWorkoutFactory {
+public class ParameterizedWorkoutWorkoutFactory extends AbstractWorkoutFactory {
 
     private final int numberOfExercises;
     private final List<Region> regions;

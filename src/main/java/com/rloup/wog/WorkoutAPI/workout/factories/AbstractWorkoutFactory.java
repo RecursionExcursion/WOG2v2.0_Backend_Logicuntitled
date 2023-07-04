@@ -7,11 +7,11 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.BiFunction;
 
-public interface AbstractWorkoutFactory {
+public abstract class AbstractWorkoutFactory {
 
-    Workout create();
+    public abstract Workout create();
 
-    static Workout buildWorkout(List<Exercise> exercises, int numOfExercises, boolean repeatExercise) {
+    Workout buildWorkout(List<Exercise> exercises, int numOfExercises, boolean repeatExercise) {
         Workout workout = new Workout();
         Random rand = new Random();
 

@@ -4,6 +4,9 @@ import com.rloup.wog.WorkoutAPI.exercise.Exercise;
 import com.rloup.wog.WorkoutAPI.util.JsonSerializer;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Paths;
 import java.util.List;
 
@@ -11,9 +14,20 @@ public enum LocalExerciseManager {
 
     INSTANCE;
 
-    private final File file = new File(getRelativePath() + "/src/main/resources/standard_ex/exercises.json");
+    private final JsonSerializer<Exercise[]> jsonSerializer;
 
-    private final JsonSerializer<Exercise[]> jsonSerializer = new JsonSerializer<>(file);
+    LocalExerciseManager() {
+        URL reasourceUrl = getClass().getResource("/standard_ex/exercises.json");
+
+        try {
+            if (reasourceUrl == null) {
+                throw new FileNotFoundException();
+            }
+            jsonSerializer = new JsonSerializer<>(new File(reasourceUrl.toURI()));
+        } catch (URISyntaxException | FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public Exercise[] getExercises() {
         return jsonSerializer.mapJsonToObject(Exercise[].class);
@@ -29,13 +43,13 @@ public enum LocalExerciseManager {
         jsonSerializer.mapObjectToJson(listToArray(exs));
     }
 
-    private Exercise[] listToArray(List<Exercise> list){
+    private Exercise[] listToArray(List<Exercise> list) {
         Exercise[] exArr = new Exercise[list.size()];
         for (int i = 0; i < list.size(); i++) exArr[i] = list.get(i);
         return exArr;
     }
 
-    private String getRelativePath(){
+    private String getRelativePath() {
         return Paths.get("").toAbsolutePath().toString();
     }
 }

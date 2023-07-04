@@ -1,1 +1,283 @@
-[{"name":"Push Ups","description":"Least amount of sets as possible","muscleRegions":["CHEST"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Single Leg Romanian Dead Lifts","description":"Reps are for each side:30","muscleRegions":["LEGS"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Dips","description":"4x6","muscleRegions":["CHEST"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Archer Push-Ups","description":"4x8","muscleRegions":["CHEST"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Pull-Ups","description":"4x6","muscleRegions":["BACK"],"equipmentNeeded":["STRAIGHT_BAR"]},{"name":"Incline Push-Ups","description":"4x10","muscleRegions":["CHEST"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Belgian Split Squats","description":"4x8 each side","muscleRegions":["LEGS"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Body Squats","description":"4x20","muscleRegions":["LEGS"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"8 count body builders","description":"4x10","muscleRegions":["CARDIO"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Jumping Jacks","description":"4x10","muscleRegions":["CARDIO"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Leg Raises","description":"4x8","muscleRegions":["CORE"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Planks","description":"1 min = 1 rep","muscleRegions":["CORE"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Kettle bell Swings","description":"Single Arm 2 x25","muscleRegions":["LEGS"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Kettle bell Rows","description":"4x8 each arm","muscleRegions":["BACK"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Kettle bell Flys","description":"4x8 each arm","muscleRegions":["CHEST"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Goblet Squats","description":"3x8","muscleRegions":["LEGS"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Goblet Squats","description":"3x8","muscleRegions":["LEGS"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Kettle Bell Snatch","description":"4x6","muscleRegions":["LEGS"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Kettle Bell Single-Leg Romanian Deadlift","description":"4x6","muscleRegions":["LEGS"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Halos","description":"4x8 each direction","muscleRegions":["BACK","CHEST"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Turkish Get-Up","description":"4x4 each side","muscleRegions":["LEGS"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Around the world","description":"4x10 each direction","muscleRegions":["CHEST"],"equipmentNeeded":["KETTLE_BELL"]},{"name":"Bench Press","description":"4x10","muscleRegions":["CHEST"],"equipmentNeeded":["BARBELL"]},{"name":"Back Squat","description":"4x8","muscleRegions":["LEGS"],"equipmentNeeded":["BARBELL"]},{"name":"Barbell Row","description":"4x8","muscleRegions":["BACK"],"equipmentNeeded":["BARBELL"]},{"name":"Front Squat","description":"4x8","muscleRegions":["LEGS"],"equipmentNeeded":["BARBELL"]},{"name":"Run","description":"","muscleRegions":["CARDIO"],"equipmentNeeded":["BODY_WEIGHT"]},{"name":"Run","description":"","muscleRegions":["CARDIO"],"equipmentNeeded":["BODY_WEIGHT"]}]
+[
+  {
+    "name": "Push Ups",
+    "description": "Least amount of sets as possible",
+    "muscleRegions": [
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Single Leg Romanian Dead Lifts",
+    "description": "Reps are for each side:30",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Dips",
+    "description": "4x6",
+    "muscleRegions": [
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Archer Push-Ups",
+    "description": "4x8",
+    "muscleRegions": [
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Pull-Ups",
+    "description": "4x6",
+    "muscleRegions": [
+      "BACK"
+    ],
+    "equipmentNeeded": [
+      "STRAIGHT_BAR"
+    ]
+  },
+  {
+    "name": "Incline Push-Ups",
+    "description": "4x10",
+    "muscleRegions": [
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Belgian Split Squats",
+    "description": "4x8 each side",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Body Squats",
+    "description": "4x20",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "8 count body builders",
+    "description": "4x10",
+    "muscleRegions": [
+      "CARDIO"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Jumping Jacks",
+    "description": "4x10",
+    "muscleRegions": [
+      "CARDIO"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Leg Raises",
+    "description": "4x8",
+    "muscleRegions": [
+      "CORE"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Planks",
+    "description": "1 min = 1 rep",
+    "muscleRegions": [
+      "CORE"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Kettle bell Swings",
+    "description": "Single Arm 2 x25",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Kettle bell Rows",
+    "description": "4x8 each arm",
+    "muscleRegions": [
+      "BACK"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Kettle bell Flys",
+    "description": "4x8 each arm",
+    "muscleRegions": [
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Goblet Squats",
+    "description": "3x8",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Goblet Squats",
+    "description": "3x8",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Kettle Bell Snatch",
+    "description": "4x6",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Kettle Bell Single-Leg Romanian Deadlift",
+    "description": "4x6",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Halos",
+    "description": "4x8 each direction",
+    "muscleRegions": [
+      "BACK",
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Turkish Get-Up",
+    "description": "4x4 each side",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Around the world",
+    "description": "4x10 each direction",
+    "muscleRegions": [
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "KETTLE_BELL"
+    ]
+  },
+  {
+    "name": "Bench Press",
+    "description": "4x10",
+    "muscleRegions": [
+      "CHEST"
+    ],
+    "equipmentNeeded": [
+      "BARBELL"
+    ]
+  },
+  {
+    "name": "Back Squat",
+    "description": "4x8",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "BARBELL"
+    ]
+  },
+  {
+    "name": "Barbell Row",
+    "description": "4x8",
+    "muscleRegions": [
+      "BACK"
+    ],
+    "equipmentNeeded": [
+      "BARBELL"
+    ]
+  },
+  {
+    "name": "Front Squat",
+    "description": "4x8",
+    "muscleRegions": [
+      "LEGS"
+    ],
+    "equipmentNeeded": [
+      "BARBELL"
+    ]
+  },
+  {
+    "name": "Run",
+    "description": "",
+    "muscleRegions": [
+      "CARDIO"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  },
+  {
+    "name": "Run",
+    "description": "",
+    "muscleRegions": [
+      "CARDIO"
+    ],
+    "equipmentNeeded": [
+      "BODY_WEIGHT"
+    ]
+  }
+]
